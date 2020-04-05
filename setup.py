@@ -5,10 +5,11 @@ __name__ = "mkn"
 __version__ = "0.0.1"
 
 setup(
-    name=__name__,
+    name="mkn",
     version=__version__,
     description='A sample PyPI project',
     author="Moji Kimino",
-    packages=find_packages(where="mkn"),
+    packages=["mkn"],
+    include_package_data=True,
     install_requires=["pytest"]
 )
