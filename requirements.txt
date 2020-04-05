@@ -1,2 +1,2 @@
 pytest
--e git://github.com/mojikimino/mkn.git
+git+git://github.com/mojikimino/mkn@master
