@@ -9,6 +9,8 @@ setup(
     version=__version__,
     description='A sample PyPI project',
     author="Moji Kimino",
+    url="https://github.com/mojikimino/mkn",
+    download_url="https://github.com/mojikimino/mkn/archive/{}.tar.gz".format(__version__),
     packages=["mkn"],
     include_package_data=True,
     install_requires=["pytest"]
