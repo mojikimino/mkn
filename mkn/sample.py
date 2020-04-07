@@ -1,4 +1,4 @@
 
-def say():
-    print("say")
-    return "say"
+def work_well():
+    print("ok")
+    return "ok"

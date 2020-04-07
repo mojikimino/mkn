@@ -2,7 +2,7 @@ from setuptools import setup
 from setuptools import find_packages
 
 __name__ = "mkn"
-__version__ = "0.0.2"
+__version__ = "0.0.3"
 
 setup(
     name="mkn",
