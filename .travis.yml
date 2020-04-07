@@ -12,7 +12,7 @@ jobs:
     - ln -s /c/Python38/python.exe /c/Python38/python3.exe
 env:
   global:
-  - TWINE_USERNAME=mojikimino
+  - TWINE_USERNAME=__token__
   - TWINE_PASSWORD=pypi-AgEIcHlwaS5vcmcCJDMyOTllNmRiLTI5ZTAtNDljOC05YTc2LWRmMDEyMDJhM2RiZgACNHsicGVybWlzc2lvbnMiOiB7InByb2plY3RzIjogWyJta24iXX0sICJ2ZXJzaW9uIjogMX0AAAYghfVwPG5wh2vlNT4x4zc-bdRc_7B2rXoKRXE_rVeUgns
 install:
 - python3 -m pip install cibuildwheel==1.3.0
