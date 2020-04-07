@@ -2,7 +2,8 @@
 [![Build Status](https://travis-ci.com/mojikimino/mkn.svg?branch=master)](https://travis-ci.com/mojikimino/mkn)
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fmojikimino%2Fmkn.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fmojikimino%2Fmkn?ref=badge_shield)
 [![PyPI](https://img.shields.io/pypi/wheel/mkn?style=flat-square)](https://img.shields.io/pypi/wheel/mkn?style=flat-square)
-
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/mkn)
+![PyPI](https://img.shields.io/pypi/v/mkn)
 
 # A minimum PyPI project
 
