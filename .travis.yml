@@ -12,13 +12,9 @@ jobs:
     - ln -s /c/Python38/python.exe /c/Python38/python3.exe
 env:
   global:
-  - TWINE_USERNAME=__token__
-<<<<<<< HEAD
-=======
-  - secure: hZwPH6pMFLstoYvEcTwLN14Or8Ve7eLA3mddlKU4ySrt9xwmG7zuXUsVBkA6DAl8EgMJVrw/Xa08ipZnnSW7+aGGCDIOyBXQVpqgCoWclpL+cq6NOD7Dec536KR6kiZQnOkA5fckChdbVO1Js5FFbnkgQQgFx1I+0byBD3Kizb801cGJ4+Q/RPTWTRQOAPnASIdFve7QGx/hhLPsU+6dWk5Yy9GVspoVidMKHBzr38M/h93FKk/8kZnMxBc0tWO3BLTDZZU63rL8JujscrYgszlZXjcMrlDwd9+lnWDCxzKvMpv6Y22NUZ7S585t61W99dgggs0nLkF+CGKFmviJlHx/cTAN8d5NXCMRWbN+9NsOszqpHKAeDPiJtSYm2qi4hN2rG0E/8fjz2cdvApgPTHE+qMHCoVB9WRlCim0DQ63hUKI6pzWdTZYevx3/3g6C/nqsjtcoKGVFNiVacN86GC1uK/KE80CxS46c3FOtpeE7t3fcCoURPayTm5I0E+8G0cmpusJjkTng3gwdDHLDNX/s0ex0/tFleMHoHvO4zY0O8zVpDc7WN+FhEYZkvx8m5wHgWj+YpnTEoTkgWj12806lj349bP6wfnu1myvB4FK3jHYvp6896bNYC41WSWaEkrmI7lY0DDbvas9vxbj1SvDKp/Rb/LO0Bjv9kzCI8Ys=
->>>>>>> 5db50d445db61349626f726b30801cd36131880f
+  - TWINE_USERNAME=vTkFCTH1UupUdtCBt03lwvhx6e6QGCIoihAjJKxtUIM2V7Kg6kl22YFuFgzbDbtPd3DDOIMZuYi44tdv5Brj0ReYZwPv5cBX1Z8R3c426KNCoRm5rpoZWcXwP3aTLXOmeZxff0KU6IpM4jV3jt2rETrHR8tVEyY53fD7DTfiswujTEZ2H/IUKOysEcD9LV5OQcuuIVspr67woqLGrXPGyFJR04OaL9uokWU7vR68TmVL58B3Waz9QmbKjL3Cly6H9SKgZVk9QnRnnNEc2nGmM1bU5jDcj2NSx5ia4/ihAclWaXMNKvcfUxoZaEaMC6f0qO0WAAS6McMOxZZYEjG9HlosjOplBIIcJULZVWkIaDSa+u7CIHQfDbEeMaqSySa3SIz14PHgRB7bElt+/2ygvWyC2hequqASk8jDyfWdJLkBRpPRnrPnKRliY4JSxpq24abjd+eyN22BTae+k2/dI5xysQITLxuHyJVDARw/iNEa3FWP4a1jFatOve/LyMMZ2Up5IJ43DSlHL3ihAnYwXXQ4+LbKjQ5lFqBxYgO8BS1qdqF4Vr7r6DLhVmpDwjkRLU+NmBrktgzMuGzq7D49ae7lfxCVY1k3pC85AtYHj0xz3klc/n8w8ZG/oo3kR25c94lf7k1lzbIwrDZvFh6ocUzwT673qM4N/hWG/1Mhh2A=
 install:
-- python3 -m pip install cibuildwheel==1.3.0
+- python3 -m pip install cibuildwheel==1.0.0
 script:
 - python3 -m cibuildwheel --output-dir wheelhouse
 after_success:
@@ -27,7 +23,3 @@ after_success:
     python3 -m pip install twine
     python3 -m twine upload wheelhouse/*.whl
   fi
-enb:
-  global:
-    TWINE_USERNAME:
-      secure: xPXNs4WoE/90cJc3dYERm60QmmO0aBwmiMzRSBomio9qgMZIEqwotBC343c/3TcDrXmYNVTTkZ68EldiivbWgCLHofWJ5iz/X8bhLs74vvd4ub92lI8BXSO5fGOnp3I+PTg9abfViTAyO6GcrHNBYcJAsddl4lRHiPhsCHGq51ZbdOiEgA3jUMqPxrcHtENVATfk2uLHu2nxr4HLlr2NFZ7WxNR0PvqMgsxKhSHNsEYr6mdKzGroft7Pr+OBC7ixTzkkqXUuoaC/WJblo6fvbU9kxJ8FZsbdZmKSHXI4BmhFH8gihkW92xZqzTuqLMZqVBaXMKp2pMzGKZCOHO/JZIz5RPzGLUrozDS/hpvXAJyeDBXWgccA44wL5e7041YYWm+LcOa4EZgKtTFgkeT/e6U3Yz5W1itXQ3kIWMJ7T8u/OXJbJ3POBU7yY4fRnjI3ENnyfhtl6m9Ppo059SLXTlWAIt3B5tzzcZHktMRo4ahy3EWIvJsCC7lhfthA7aL9zeSrQaa/SMLf5rxnH1n8HapL/Z69XOS+R4UIJYi9gRrQNVjpXq6jl4kYY3WqUmAFY51ZBBD7cVEOvx6UG5jLKlRNI5VgNlPcMbYq/6ReRffjhUsCuvB4k+WIAf2MZO7rQczzmlimd0TDit4tWN5StMbE/mvWIdSpwpB+0eSDDQo=
