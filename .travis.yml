@@ -1,32 +1,11 @@
 language: python
-jobs:
-  include:
-  - services: docker
-  - os: osx
-    language: shell
-  - os: windows
-    language: shell
-    before_install:
-    - choco install python --version 3.8.0
-    - export PATH="/c/Python38:/c/Python38/Scripts:$PATH"
-    - ln -s /c/Python38/python.exe /c/Python38/python3.exe
-env:
-  global:
-  - TWINE_USERNAME=__token__
-install:
-- python3 -m pip install cibuildwheel==1.3.0
-script:
-- python3 -m cibuildwheel --output-dir wheelhouse
-after_success:
-- |
-  if [[ $TRAVIS_TAG ]]; then
-    python3 -m pip install twine
-    python3 -m twine upload wheelhouse/*.whl
-  fi
+python:
+- '3.7'
+script: true
 deploy:
   provider: pypi
   user: mojikimino
-  password:
-    secure: MX0gLqQ123xpFnK0OC1DypRktFMEiy2W54BbHk+AFedW5n2RSMP/pacLjTonNFfVOZE+34ls2oyNzwsofFBhWi+A/mVYzlddD5dZPW20cXCyc6snnlkwib4XAbQz+x5ls2BvsTZu4/665gytXutjCs0Rn0PhbySr+NH1g7TMPGUKci9UAG47X5Tse7KHmBXPDqbCTBzyuc2ARMMRtWeMYuD6pgj0HzElM3rPm4ytqIkna8k03f6ADr5mg3AhU9q/asXZZZ/nBEfF+h9w/iLLOzInBQHKcWcJhhewa8MC8v2jPH9gpklZuf04P0j9yZjHBTEiHJbxqtUR+eXeO2OU3jxGmQ8X1m0K/WnyH27CW4v8koDdnzshChdai7t6NC6nNHFCVQ+CEbWW19b5c+qTEdXIO6aoJf0/Vf0BuAkMA/QrW/FwghfgK0gZOiP+q3gyz8kXfIDoZUe9FWRddn/2HG1IavMzTx+D2vBJSGCWzTWmdpKthOFuc/OfbkyzjmTWeDxlRCB3YxklP4NU84+ZvlNjqnNvzKxdWPV0Vd+Gn+I5xK48TL0XwLNhhTxIovFW4lJt54GWmO4Rmz5/mIuQdt6YZzCP2qr8NIdX5HAzTOsy3dhfFZji/BI9MOEQ3TZ7MlXXHYiIfmQ1izb+kkvGau4DQGovZ7dxCQqq6q3MZ2k=
   on:
     tags: true
+  password:
+    secure: VADTBd3BaZ9HgNbhsKBEdL6jiqTsLKgdoU5qq6sCfbAWkJHYi78v+HWiJ7OHFpUY4iLpi3k/vpHRYkPA/OtMxTcA6BCxTYGWzs6Z9ndPf32YsuxeOFDbfa2cjSnIgCBVo2m7Nf/BhD/yTBtlY1NBGlL1R6kBrZvd1B/SoK5tTExZkkkhYT4J2Rmxhog15xSmYebPoXnRFslw9gZfsda0moTe89v8Nr3FNNHz8ikYOlt6vbStJLtr0Xnrxy1ggMreSEPKVLPcblNuSNH/mRnMJe+aHAZzUSpoHCsMjjg+yGNtZlpX5UhY2Xw/SUiM8u3BySb8FU5rQDr2fuY+ukcWZap2qvshwJW0qrHEW3Coy5Fp0N0i1Z3Lg47jkWVezvWwPkAjTWWfCYP9NpR+3b4+6bHM4wgIv9Ad+cdWlRSDz5aS+Wx3rfc2UnRerAYXduCDZR1uq27XznT2FtPAHyEG2GD6FeRxIfxmM5A1O2A9NIHE/4tgo/DYWam7iDXHu/fOc7Y14MnpktdJt+SiDEr1LC8+uJfwhmT8ECdSvi7+mNG0SXiwIAXNFj9RhvfFZuYMDgdsfw8JQcfgmdi2jp6HJBbGKkReN2Zv1u5Kmik5D84OkpYHov/KW3kc0+4Pxqd74StI/jJdjwNDyecxKUjGO9aykGHAu0PfAcL76xZK/Ac=

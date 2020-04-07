@@ -13,5 +13,7 @@ setup(
     download_url="https://github.com/mojikimino/mkn/archive/{}.tar.gz".format(__version__),
     packages=["mkn"],
     include_package_data=True,
-    install_requires=["pytest"]
-)
+    install_requires=["pytest"],
+    use_scm_version=True,
+    setup_requires=["setuptools_scm"]
+)   
