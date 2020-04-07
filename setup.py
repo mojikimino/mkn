@@ -7,13 +7,11 @@ __version__ = "0.0.4"
 setup(
     name="mkn",
     version=__version__,
-    description='A sample PyPI project',
+    description='A minimum PyPI project',
     author="Moji Kimino",
     url="https://github.com/mojikimino/mkn",
     download_url="https://github.com/mojikimino/mkn/archive/{}.tar.gz".format(__version__),
     packages=["mkn"],
     include_package_data=True,
-    install_requires=["pytest"],
-    use_scm_version=True,
-    setup_requires=["setuptools_scm"]
+    install_requires=["pytest"]
 )   
