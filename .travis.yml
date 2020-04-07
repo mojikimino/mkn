@@ -13,6 +13,10 @@ jobs:
 env:
   global:
   - TWINE_USERNAME=__token__
+<<<<<<< HEAD
+=======
+  - secure: hZwPH6pMFLstoYvEcTwLN14Or8Ve7eLA3mddlKU4ySrt9xwmG7zuXUsVBkA6DAl8EgMJVrw/Xa08ipZnnSW7+aGGCDIOyBXQVpqgCoWclpL+cq6NOD7Dec536KR6kiZQnOkA5fckChdbVO1Js5FFbnkgQQgFx1I+0byBD3Kizb801cGJ4+Q/RPTWTRQOAPnASIdFve7QGx/hhLPsU+6dWk5Yy9GVspoVidMKHBzr38M/h93FKk/8kZnMxBc0tWO3BLTDZZU63rL8JujscrYgszlZXjcMrlDwd9+lnWDCxzKvMpv6Y22NUZ7S585t61W99dgggs0nLkF+CGKFmviJlHx/cTAN8d5NXCMRWbN+9NsOszqpHKAeDPiJtSYm2qi4hN2rG0E/8fjz2cdvApgPTHE+qMHCoVB9WRlCim0DQ63hUKI6pzWdTZYevx3/3g6C/nqsjtcoKGVFNiVacN86GC1uK/KE80CxS46c3FOtpeE7t3fcCoURPayTm5I0E+8G0cmpusJjkTng3gwdDHLDNX/s0ex0/tFleMHoHvO4zY0O8zVpDc7WN+FhEYZkvx8m5wHgWj+YpnTEoTkgWj12806lj349bP6wfnu1myvB4FK3jHYvp6896bNYC41WSWaEkrmI7lY0DDbvas9vxbj1SvDKp/Rb/LO0Bjv9kzCI8Ys=
+>>>>>>> 5db50d445db61349626f726b30801cd36131880f
 install:
 - python3 -m pip install cibuildwheel==1.3.0
 script:

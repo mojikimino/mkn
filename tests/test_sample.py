@@ -2,6 +2,6 @@ from mkn import sample
 
 
 def test_say():
-    expected = "say"
-    result = sample.say()
+    expected = "ok"
+    result = sample.work_well()
     assert result == expected

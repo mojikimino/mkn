@@ -12,10 +12,12 @@ $ pip install mkn
 
 # Usage
 
+To have a check pip works well, run the following command.
+
 ```python
 from mkn import sample
-sample.say()
->>> "say"
+sample.work_well()
+>>> "ok"
 ```
 
 
