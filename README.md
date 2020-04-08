@@ -5,6 +5,7 @@
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/mkn)
 ![PyPI](https://img.shields.io/pypi/v/mkn)
 [![Coverage Status](https://coveralls.io/repos/github/mojikimino/mkn/badge.svg?branch=master)](https://coveralls.io/github/mojikimino/mkn?branch=master)
+[![Documentation Status](https://readthedocs.org/projects/mkn/badge/?version=latest)](https://mkn.readthedocs.io/en/latest/?badge=latest)
 
 # A minimum PyPI project
 
