@@ -4,6 +4,7 @@
 [![PyPI](https://img.shields.io/pypi/wheel/mkn?style=flat-square)](https://img.shields.io/pypi/wheel/mkn?style=flat-square)
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/mkn)
 ![PyPI](https://img.shields.io/pypi/v/mkn)
+[![Coverage Status](https://coveralls.io/repos/github/mojikimino/mkn/badge.svg?branch=master)](https://coveralls.io/github/mojikimino/mkn?branch=master)
 
 # A minimum PyPI project
 

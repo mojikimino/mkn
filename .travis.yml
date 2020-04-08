@@ -23,10 +23,15 @@ before_install:
 
 install:
   - python3 -m pip install pytest
+  - pip install coveralls
 
 script:
   - python3 setup.py install
   - pytest
+  - coverage run --source=mkn setup.py test
+
+after_success:
+    - coveralls
 
 stages:
   - test
